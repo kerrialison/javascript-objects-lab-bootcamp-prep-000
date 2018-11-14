@@ -7,6 +7,12 @@ function updateObjectWithKeyAndValue(object){
   return object;
 }
 
+function updateObjectWithKeyAndValue(object, key, value){
+  Object.assign({ eggs: 3 }, { flour: '1 cup' })
+  return object
+}
+
+
 function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
   obj[key] = value
 
@@ -14,10 +20,5 @@ function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
 }
 
 const recipe = { eggs: 3 }
-
-function updateObjectWithKeyAndValue(object, key, value){
-  Object.assign({ eggs: 3 }, { flour: '1 cup' })
-  return object
-}
 
 destructivelyUpdateObjectWithKeyAndValue(recipe, 'flour', '3 cups')
