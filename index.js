@@ -26,10 +26,9 @@ function deleteFromObjectByKey(object, key){
   delete object.key;
 }
 
-function deleteFromObjectByKey(object, key) {
+function deleteFromObjectByKey(key) {
   return Object.assign({}, obj, { [key]: value })
 }
 const recipe = { eggs: 3 }
 
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup')
-
