@@ -29,7 +29,7 @@ function deleteFromObjectByKey(object, key){
 function deleteFromObjectByKey(object, key) {
   return Object.assign({}, obj, { [key]: value })
 }
-
+const recipe = { eggs: 3 }
 
 updateObjectWithKeyAndValue(recipe, 'chocolate', '1 cup')
-}
+
