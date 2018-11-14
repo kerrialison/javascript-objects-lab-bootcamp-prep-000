@@ -1,6 +1,6 @@
 function recipes(breakfast, lunch, dinner) {
   return {
-    breakfast, 
+    breakfast,
     lunch,
     dinner
   };
