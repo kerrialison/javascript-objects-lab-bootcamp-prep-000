@@ -1,11 +1,4 @@
-function recipes(breakfast, lunch, dinner) {
-  return {
-    breakfast,
-    lunch,
-    dinner
-  };
-}
-recipes("omlette", 'wraps', 'steak');
+var recipes = {};
 
 function updateObjectWithKeyAndValue(object, key, value){
   recipes[breakfast] = "white omelettes";
