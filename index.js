@@ -7,7 +7,7 @@ function updateObjectWithKeyAndValue(object){
   return object;
 }
 
-function updateObjectWithKeyAndValue(object, key, value){
+function updateObjectWithKeyAndValue(object){
   Object.assign({ eggs: 3 }, { flour: '1 cup' })
   return object
 }
