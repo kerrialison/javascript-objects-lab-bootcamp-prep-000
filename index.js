@@ -7,11 +7,13 @@ function updateObjectWithKeyAndValue(object){
   return object;
 }
 
-function updateObjectWithKeyAndValue(object){
-  Object.assign({ eggs: 3 }, { flour: '1 cup' })
+function updateObjectWithKeyAndValue(obj, key, value){
+  return Object.assign({}, obj, { [key]: value })
   return object
 }
+const recipe = { eggs: 3 }
 
+updateObjectWithKeyAndValue(recipe, 'fresh parmesan', '1/2 cup')
 
 function destructivelyUpdateObjectWithKeyAndValue(obj, key, value) {
   obj[key] = value
